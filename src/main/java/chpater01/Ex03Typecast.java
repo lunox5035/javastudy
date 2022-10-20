@@ -1,6 +1,6 @@
 package chpater01;
 
-public class Typecast {
+public class Ex03Typecast {
 	
 	public static void main(String[] args) {
 		int i1 = 10;

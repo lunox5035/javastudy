@@ -6,7 +6,7 @@ package chpater01;
  *
  */
 
-public class Literal {
+public class Ex02Literal {
 
 	public static void main(String[] args) {		
 		float f = 3.14f;
