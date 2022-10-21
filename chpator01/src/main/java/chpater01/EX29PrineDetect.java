@@ -17,6 +17,7 @@ public class EX29PrineDetect {
 					break;
 				}
 			}
+			
 			if (isprime==true) {
 				System.out.println(i);
 			}
