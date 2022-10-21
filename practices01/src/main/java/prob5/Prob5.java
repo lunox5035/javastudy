@@ -5,7 +5,7 @@ public class Prob5 {
 	public static void main(String[] args) {
 				
 		//반복문 100까지 
-		for (int a=1; 1<=99; a++) {
+		for (int a=1; a<100; a++) {
 			int count=0;
 						
 			String number = String.valueOf(a);			//형변환 int=>String			
