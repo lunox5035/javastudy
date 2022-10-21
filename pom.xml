@@ -12,13 +12,9 @@
 		<maven.compiler.target>12</maven.compiler.target>
 	</properties>
 
-	<build>
-		<finalName>javastudy</finalName>
-	</build>
-
-
 	<modules>
 		<module>chpator01</module>
 		<module>practices01</module>
+		<module>practice02</module>
 	</modules>
 </project>
