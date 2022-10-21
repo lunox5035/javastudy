@@ -3,6 +3,8 @@
 	<groupId>com.bit</groupId>
 	<artifactId>javastudy</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.build.outputEncoding>UTF-8</project.build.outputEncoding>
@@ -15,4 +17,8 @@
 	</build>
 
 
+	<modules>
+		<module>chpator01</module>
+		<module>practices01</module>
+	</modules>
 </project>
