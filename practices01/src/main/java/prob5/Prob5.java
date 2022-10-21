@@ -13,7 +13,7 @@ public class Prob5 {
 			//숫자 내 3,6,9 갯수 세기
 			for (int e = 0; e<number.length(); e++) {	
 				char c = number.charAt(e);
-
+				int x= c-'0';
 				if (c==3||c==6||c==9) {					
 					count++;							
 				}
@@ -21,9 +21,11 @@ public class Prob5 {
 
 			//출력문
 			System.out.print(a);
-			for (int z =0;z<count;a++) {
+			for (int z =0;z<count;z++) {
 				System.out.print("짝");
-			}	
+			
+			}
+			System.out.print("\n");
 		}
 	}
 }
