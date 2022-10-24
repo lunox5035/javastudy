@@ -1,4 +1,7 @@
 package prob04;
+
+import java.nio.file.attribute.AclEntry;
+
 public class Prob04 {
 
 	public static void main(String[] args) {
@@ -12,24 +15,19 @@ public class Prob04 {
 	public static char[] reverse(String str) {
 		char[] cs = str.toCharArray();
 		
-		return null;
+		char[] array = new char[cs.length];
+		int startIndex = 0;
+		for (int i=cs.length-1; i>=0;i--){
+//		for (int i=0; i< cs.length; i++){
+			array[startIndex++] =  cs[i];
+		}
+		return(array);
 	}
 
 	public static void printCharArray(char[] array){
 		/* 코드를 완성합니다 */
 		
-		String reverse = "";
-		for (int i=array.length-1;i>0;i--) {
-			reverse=reverse+array[i];
-		}
 		
-		
-		
-		
-		
-		
-		
-		
-		System.out.println(reverse);
+		System.out.println(array);
 	}
 }
