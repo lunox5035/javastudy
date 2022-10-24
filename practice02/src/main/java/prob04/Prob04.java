@@ -18,7 +18,6 @@ public class Prob04 {
 		char[] array = new char[cs.length];
 		int startIndex = 0;
 		for (int i=cs.length-1; i>=0;i--){
-//		for (int i=0; i< cs.length; i++){
 			array[startIndex++] =  cs[i];
 		}
 		return(array);
