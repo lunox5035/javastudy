@@ -22,16 +22,17 @@ public class Ex32Arrray {
 		int[] a5 =new int[5];
 		a5[0]=0;
 		a5[1]=1;
-		a5[2]=2W;
+		a5[2]=2;
 		a5[3]=3;
 		a5[4]=4;
 		System.out.println();
 		
 		//초기화3
-		int[]a6=new int[af6;
+		int[]a6=new int[] {0,1,2,3,4};
+		System.out.println(a6.length);
 		
 		
 		
 	}
 
-}d
+}
