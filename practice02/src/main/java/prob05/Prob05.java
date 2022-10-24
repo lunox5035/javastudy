@@ -15,8 +15,31 @@ public class Prob05 {
 			// 정답 램덤하게 만들기
 			Random random = new Random();
 			int correctNumber = random.nextInt( 100 ) + 1;
-			System.out.println(correctNumber);
+//			System.out.println(correctNumber);
 
+			System.out.println("수를 결정하였습니다.:"+correctNumber);
+
+			int low= 1;
+			int high=100;
+			
+			while(true){
+				System.out.print(low+"-"+high);
+				System.out.print(">>");
+				int answer = scanner.nextInt();
+								
+				if(answer == correctNumber) {
+					System.out.println("정답입니다");
+					break;
+				}else if(answer > correctNumber) {
+					System.out.println("더 낮게");
+					high= answer;
+				}else if(answer < correctNumber) {
+					System.out.println("더 높게");
+					low=answer;
+				}
+			}
+				
+			
 			
 			//새 게임 여부 확인하기
 			System.out.print( "다시 하겠습니까(y/n)>>" );
