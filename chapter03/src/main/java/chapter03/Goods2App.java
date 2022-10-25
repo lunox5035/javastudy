@@ -1,8 +1,11 @@
 package chapter03;
 
+import mypackage.Goods2;
+
 public class Goods2App {
+	
 	public static void main() {
-		Goods2=new Goods2();
+		Goods2 g=new Goods2();
 		
 		//pu 접근제한이 없다.		
 		g.name="camera";
