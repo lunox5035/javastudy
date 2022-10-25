@@ -4,10 +4,10 @@ public class GoodsApp {
 	
 	public static void main(String[] args) {
 		Goods camera = new Goods();
-		camera.name="nikon";
-		camera.price =400000;
-		camera.countStock=30;
-		camera.countSold=50;
+		camera.setName("nikon");
+		camera.setPrice(400000);
+		camera.setCountStock(30);
+		camera.setCountSold(50);
 		
 		System.out.println(1);
 		System.out.println(camera);
