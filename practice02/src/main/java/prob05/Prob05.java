@@ -21,14 +21,16 @@ public class Prob05 {
 
 			int low= 1;
 			int high=100;
-			
+			int count=0;
 			while(true){
-				System.out.print(low+"-"+high);
-				System.out.print(">>");
+				count+=1;
+				System.out.print(low+"-"+high+"\n");
+				System.out.print(count+">>");
 				int answer = scanner.nextInt();
 								
 				if(answer == correctNumber) {
 					System.out.println("정답입니다");
+					count=0;
 					break;
 				}else if(answer > correctNumber) {
 					System.out.println("더 낮게");
