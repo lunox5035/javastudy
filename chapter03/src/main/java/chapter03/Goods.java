@@ -1,8 +1,8 @@
 package chapter03;
 
-import java.security.PublicKey;
-
 public class Goods {
+	public static int countOfGoods = 0;	//지역변수
+	
 	private String name;
 	private int price;
 	private int countStock;
@@ -14,6 +14,12 @@ public class Goods {
 //	public String getName() {
 //		return name;//여기는 this 없나?
 //	}
+	
+	public Goods() {
+		countOfGoods++;
+	}
+	
+	
 	
 	public String getName() {
 		return name;
@@ -28,9 +34,12 @@ public class Goods {
 	}
 
 	public void setPrice(int price) {
+		if(price < 0) {
+			price = 0;
+		}
 		this.price = price;
 	}
-
+	
 	public int getCountStock() {
 		return countStock;
 	}
@@ -47,9 +56,19 @@ public class Goods {
 		this.countSold = countSold;
 	}
 	
-	public String toString() {
-		return "Goods [name=" + name + ", price=" + price + ", countStock=" + countStock + ", countSold=" + countSold
-				+ "]";
+		
+
+
+
+	public void showInfo() {
+		return "Goods [name=" + name + ", price=" + price + ", countStock=" + countStock + ", countSold=" + countSold + "]";
+	}
+
+
+
+	public int calcDiscouintPrice(double d) {
+	return price * discountR
+		return 0;
 	}
 
 	
