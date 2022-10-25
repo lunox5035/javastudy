@@ -8,7 +8,7 @@ public class Main {
 		pt.setX(10);
 		pt.setY(50);
 		
-		drawPoint(pt);
+		drawPonint(pt);
 	}
 	
 	public static void drawPonint(Point pt) {
