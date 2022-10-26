@@ -19,6 +19,15 @@ public class Goods {
 		countOfGoods++;
 	}
 	
+	public Goods(String name,int price, int countStock,int countSold) {
+		this.name=name;
+		this.price=price;
+		this.countStock=countStock;
+		this.countSold=countSold;
+
+		
+		countOfGoods++;		
+	}
 	
 	
 	public String getName() {
@@ -60,15 +69,14 @@ public class Goods {
 
 
 
-	public void showInfo() {
+	public String showInfo() {
 		return "Goods [name=" + name + ", price=" + price + ", countStock=" + countStock + ", countSold=" + countSold + "]";
 	}
 
 
 
-	public int calcDiscouintPrice(double d) {
-	return price * discountR
-		return 0;
+	public int calcDiscouintPrice(double discountRate) {
+	return(int)(price * discountRate);
 	}
 
 	

@@ -8,7 +8,30 @@ public class song {
 	private int year;
 	private int track;
 	
+	public song() {
+		
+	}
 	
+	public song(String title,String artist) {
+//		this.title = title;
+//		this.artist=artist;
+//		this.album="";
+//		this.composer="";
+//		this.year=0;
+//		this.track=0;
+		//코드 중복 제거
+		this(title,artist,"","",0,0);
+	}
+	
+	
+	public song(String title,String artist,String album,String composer,int year,int track) {
+		this.title = title;
+		this.artist=artist;
+		this.album=album;
+		this.composer=composer;
+		this.year=year;
+		this.track=track;			
+	}
 	
 	public String getTitle() {
 		return title;
@@ -49,10 +72,12 @@ public class song {
 
 	public void show() {
 		System.out.println(
-				artist + " " + title + "(" + album + "," + year + "," + track + "번 트랙 " + composer + "작곡" + ")");
+				artist + " " + title+ "(" + album + "," + year + "," + track + "번 트랙 " + composer + " 작곡" + ")");
 
 	}
 	
 	
-
+	
+	
+	
 }

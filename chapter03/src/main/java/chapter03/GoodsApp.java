@@ -22,6 +22,13 @@ public class GoodsApp {
 		System.out.println(Goods.countOfGoods);
 //		System.out.println(1);
 //		System.out.println(camera);
+		
+		Goods g4 = new Goods("Tv",10000,10,0);
+		g4.showInfo();
+		System.out.println("instance count"+Goods.countOfGoods);
+		
+		
+		
 	}
 	
 }

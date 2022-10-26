@@ -13,5 +13,16 @@ public class songtest {
 		
 		song.show();
 		
+		song song2=new song("좋은날","아이유","Real","이민수",2010,3);
+		
+		song2.show();
+		
+		song song3=new song("사건의 지평선","윤하");
+		
+		song3.show();
+		
 	}
+	
+	
+	
 }
