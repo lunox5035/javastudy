@@ -29,27 +29,6 @@ public class CurrencyConverter {
 		this.rate=rate;
 	}
 
-
-
-	public Double getDollar() {
-		return dollar;
-	}
-
-	public Double getKrw() {
-		return krw;
-	}
-
-	public Double getRate() {
-		return rate;
-	}
-
-	public double toKRW() {
-		return krw*rate;
-	}
-
-	
-
-
 	public double toDollar() {
 		return dollar/rate;
 	}
