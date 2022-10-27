@@ -1,4 +1,4 @@
-package paint;
+package com.bitacdemy.paint.point;
 
 public class ColorPoint extends Point {
 	

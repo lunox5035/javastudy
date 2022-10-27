@@ -1,4 +1,6 @@
-package paint;
+package com.bitacdemy.paint.point;
+
+import com.bitacdemy.paint.i.Drawable;
 
 public class Point implements Drawable{
 	private int x;

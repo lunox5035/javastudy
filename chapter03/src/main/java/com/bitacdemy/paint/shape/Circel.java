@@ -1,4 +1,4 @@
-package paint;
+package com.bitacdemy.paint.shape;
 
 public class Circel extends Shape {
 	private int x1, y1;

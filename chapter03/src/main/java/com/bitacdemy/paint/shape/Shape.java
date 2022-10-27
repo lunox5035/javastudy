@@ -1,4 +1,6 @@
-package paint;
+package com.bitacdemy.paint.shape;
+
+import com.bitacdemy.paint.i.Drawable;
 
 public abstract class Shape implements Drawable{
 

@@ -1,5 +1,13 @@
-	package paint;
+package com.bitacdemy.paint.main;
 
+import com.bitacdemy.paint.i.Drawable;
+import com.bitacdemy.paint.point.ColorPoint;
+import com.bitacdemy.paint.point.Point;
+import com.bitacdemy.paint.shape.Circel;
+import com.bitacdemy.paint.shape.Triangle;
+import com.bitacdemy.paint.text.GraphicText;
+
+	
 public class Main {
 	//====================================
 	
@@ -47,6 +55,21 @@ public class Main {
 		
 		GraphicText gt= new GraphicText("Hello World");
 		draw(gt);
+		//instanceof test
+		System.out.println(circel instanceof Object);
+		System.out.println(circel instanceof Shape);
+		System.out.println(circel instanceof Circel);
+		//오류 : 클래스는 hierachy 상위와 하위만 instanceof연산자를 사용할 수 있다. 부모자식만 확인가능
+		//∴동위이니깐 false
+		//System.out.println(circel instanceof Readable);
+//		Object o= circel;
+//		System.out.println(o instanceof String);
+		
+		//하지만 인터페이스는 hierachy와 상관없이 instanceof연산자를 사용할 수 있다.
+		System.out.println(circel instanceof Drawable);
+		System.out.println(circel instanceof Runnable);//남이니깐 false
+		
+		
 		
 	}
 	
