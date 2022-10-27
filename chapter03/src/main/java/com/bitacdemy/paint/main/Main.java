@@ -4,6 +4,8 @@ import com.bitacdemy.paint.i.Drawable;
 import com.bitacdemy.paint.point.ColorPoint;
 import com.bitacdemy.paint.point.Point;
 import com.bitacdemy.paint.shape.Circel;
+import com.bitacdemy.paint.shape.Rectangle;
+import com.bitacdemy.paint.shape.Shape;
 import com.bitacdemy.paint.shape.Triangle;
 import com.bitacdemy.paint.text.GraphicText;
 
