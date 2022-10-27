@@ -22,7 +22,9 @@ public class GoodsApp {
 		
 		
 		// 상품 출력
-		
+		for (r = 0; i < (name); i++) {
+			System.out.println(name + "(가격:" + price + "원)이 " + countStock + "개 입고되었습니다.");
+		}
 		// 자원정리
 		scanner.close();
 	}
