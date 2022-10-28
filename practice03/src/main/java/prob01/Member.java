@@ -1,5 +1,6 @@
 package prob01;
 
+
 public class Member {
 	private String id;
 	private String name;
@@ -23,6 +24,5 @@ public class Member {
 	public void setPoint(int point) {
 		this.point = point;
 	}
-	
-	
-}
+		
+	}
