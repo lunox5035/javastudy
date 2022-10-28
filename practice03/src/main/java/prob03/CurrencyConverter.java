@@ -1,35 +1,28 @@
 package prob03;
 
 public class CurrencyConverter {
-	private Double dollar;
-	private Double krw;
-	private Double rate;	
-	
-	public void setDollar(Double dollar) {
+
+	private static double dollar;
+	private static double krw;
+	private static double rate;
+
+	public CurrencyConverter(double dollar, double krw, double rate) {
 		this.dollar = dollar;
-	}
-
-	public void setKrw(Double krw) {
 		this.krw = krw;
-	}
-
-	public void setRate(Double rate) {
 		this.rate = rate;
 	}
 
-	
-	
-	public CurrencyConverter() {
-
-	}
-	
-	public CurrencyConverter(Double dollar,Double krw,Double rate) {
-		this.dollar=dollar;
-		this.krw=krw;
-		this.rate=rate;
+	public static double toDollar(double won) {
+		return won = dollar * rate;
 	}
 
-	public double toDollar() {
-		return dollar/rate;
+	public static double toKRW(double dollar) {
+		return dollar = krw / rate;
 	}
+
+	public static void setRate(double r) {
+		// 환율 설정(KRW/$1)
+		return krw/r;
+	}
+
 }
