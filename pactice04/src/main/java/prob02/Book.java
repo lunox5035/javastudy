@@ -69,8 +69,7 @@ public class Book extends BookShop {
 				"책 제목:" +title+ ", 작가:" + author + ", 대여 여부:" + (stateCode==1?"재고있음":"대여중")
 				);
 	}
-	
-	
+		
 //	// 도서정보 출력
 //	public void displayBookInfo() {
 //		

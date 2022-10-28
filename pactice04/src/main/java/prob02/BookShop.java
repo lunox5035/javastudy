@@ -41,14 +41,6 @@ public class BookShop {
 	}
 }
 
-	
-	
-	
-	
-	
-	
-	
-	
 //	private static void displayBookInfo(Book[] books) {
 //		for (int i = 0; i < books.length; i++) {
 //			System.out.println("책 제목:" + books[1] + ", 작가:" + books[2] + ", 대여유무:" );
