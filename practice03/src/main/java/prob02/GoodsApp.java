@@ -1,16 +1,21 @@
 package prob02;
 
+import java.security.PublicKey;
 import java.util.Arrays;
 import java.util.Scanner;
 
 public class GoodsApp {
-//	private static final int COUNT_GOODS = 3;
+	private static final int COUNT_GOODS = 3;
 
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 
-//		Goods[] goods = new Goods[COUNT_GOODS];
+		Goods[] goods = new Goods[COUNT_GOODS];
 
+		
+
+		for (int i=0;i<COUNT_GOODS;i++) {
+		
 		// 상품 입력
 		String line=scanner.nextLine();
 		String[] infos=line.split(" ");
@@ -22,8 +27,8 @@ public class GoodsApp {
 		
 		
 		// 상품 출력
-		for (r = 0; i < (name); i++) {
-			System.out.println(name + "(가격:" + price + "원)이 " + countStock + "개 입고되었습니다.");
+			Goods g4 = new Goods(name,price,countStock);
+			g4.showInfo();
 		}
 		// 자원정리
 		scanner.close();
