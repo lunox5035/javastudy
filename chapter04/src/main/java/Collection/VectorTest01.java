@@ -24,7 +24,7 @@ public class VectorTest01 {
 		System.out.println("===========================");
 		
 		//"순회2"
-		Enumeration<String> e =v.elements(){
+		Enumeration<String> e =v.elements();
 		while (e.hasMoreElements()) {
 			String string = (String) e.nextElement();
 			
@@ -32,6 +32,6 @@ public class VectorTest01 {
 			String s= e.nextElement();
 			System.out.println(s);
 		}
-	}
+	
 
 }
