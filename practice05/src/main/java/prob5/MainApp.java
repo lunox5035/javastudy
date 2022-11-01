@@ -1,10 +1,12 @@
 package prob5;
 
+import java.awt.color.CMMException;
+
 public class MainApp {
 
 	public static void main(String[] args) {
 		try {
-			MyStack stack = new MyStack(3);
+			MyStack stack = new MyStack(3);//최초배열의 크기
 			stack.push("Hello");
 			stack.push("World");
 			stack.push("!!!");
@@ -24,7 +26,7 @@ public class MainApp {
 			System.out.println(stack.pop());
 			System.out.println(stack.pop());
 			
-		} catch ( MyStackException ex) {
+		} catch ( CMMException ex) {
 			System.out.println( ex );
 		}
 
