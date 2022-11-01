@@ -21,19 +21,19 @@ public class MyStack {
 ////				break;
 ////			}
 //		}
-		for (int i=0;i<buffer.length;i++) {
+		for (int i=0;i<buffer.length;i++) {						//비어있지 않은 배열 갯수=현재 top값
 			if(buffer[i]!=null) {
 				top++;
 			}
 		}
 
-		if (buffer.length == top) {
+		if (buffer.length == top) {								//top이랑 배열 길이가 같으면
 
-			String arr[] = new String[(buffer.length * 2)];
-			for (int i = top; i < top; i++) {
-				arr[i] = buffer[i];
+			String arr[] = new String[(buffer.length * 2)];		//임의의 배열길이를 2배의 배열을 만든다
+			for (int i = top; i < top; i++) {					
+				arr[i] = buffer[i];								//내용 추가
 			}
-			buffer = arr;
+			buffer = arr;										//기본배열을 새 배열로 대체
 		
 //			buffer= Arrays.copyOf(buffer, buffer.length-1);
 			
