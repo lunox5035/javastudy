@@ -1,11 +1,13 @@
 package Collection;
 
 import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
 
 public class ArratListTest {
 
 	public static void main(String[] args) {
-		Lsit<String> list = new ArrayList<>();
+		List<String> list = new ArrayList<>();
 
 		list.add("둘리");
 		list.add("마이클");
@@ -13,7 +15,7 @@ public class ArratListTest {
 
 		// 수회
 
-		for (int i = 0; i < list.size; i++) {
+		for (int i = 0; i < list.size(); i++) {
 			String s = list.get(i);
 			System.out.println(s);
 		}
@@ -24,7 +26,7 @@ public class ArratListTest {
 		System.out.println("=========================");
 
 		// 순회2
-		Interator<String> it = list.iterator();
+		Iterator<String> it = list.iterator();
 		while (it.hasNext()) {
 			String s = it.next();
 			System.out.println(s);
