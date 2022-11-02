@@ -4,7 +4,8 @@ import java.lang.reflect.Array;
 import java.util.Arrays;
 
 public class MyStack {
-
+	
+	int top=0;
 	private String[] buffer;
 
 	public MyStack(int size) {
@@ -14,18 +15,18 @@ public class MyStack {
 	}
 
 	public void push(String string) {
-		int top = 0;
+//		int top = 0;
 //		while (buffer[top] != null) {	// top값 찾기 
 //			top += 1;
 ////			if (buffer[top] == null) {
 ////				break;
 ////			}
 //		}
-		for (int i=0;i<buffer.length;i++) {						//비어있지 않은 배열 갯수=현재 top값
-			if(buffer[i]!=null) {
-				top++;
-			}
-		}
+//		for (int i=0;i<buffer.length;i++) {						//비어있지 않은 배열 갯수=현재 top값
+//			if(buffer[i]!=null) {
+//				top++;
+//			}
+//		}
 
 		if (buffer.length == top) {								//top이랑 배열 길이가 같으면
 
