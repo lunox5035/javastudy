@@ -26,45 +26,43 @@ public class CalcApp {
 			int lValue = Integer.parseInt( tokens[ 0 ] );		//왼쪽 숫자
 			int rValue = Integer.parseInt( tokens[ 2 ] );		//오른쪽 숫자
 			
-		
-			
+			Arith arith=null;			
 			
 			switch( tokens[ 1 ] ) {								//사칙연산 구분
-				case "+" : {									//더하기 구분
-					Add add = new Add();
-					add.setValue( lValue, rValue );
-					int result = add.calculate();
-					System.out.println( ">> " + result );
+			
+				case "+" : {	
+					arith=new Add();
 					
 					break;
 				}
-				case "-" : {									//빼기 구분
-					Sub sub = new Sub();
-					sub.setValue( lValue, rValue );
-					int result = sub.calculate();
-					System.out.println( ">> " + result );
+				case "-" : {	
+					arith= new Sub();
 					
 					break;
 				}
-				case "*" : {									//하기 구분
-					Mul mul = new Mul();
-					mul.setValue( lValue, rValue );
-					int result = mul.calculate();
-					System.out.println( ">> " + result );
+				case "*" : {	
+					arith= new Mul();
 					
 					break;					
 				}
-				case "/" : {									//나누기 구분
-					Div div = new Div();
-					div.setValue( lValue, rValue );
-					int result = div.calculate();
-					System.out.println( ">> " + result );
+				case "/" : {			
+					arith= new Div();
+					
 					
 					break;
 				}
-				default :  {									//예외처리
-					System.out.println( ">> 알 수 없는 연산입니다.");
-				}
+//				default :  {									//예외처리
+//					System.out.println( ">> 알 수 없는 연산입니다.");
+//				}
+				
+//				if (arith==null) {
+//					System.out.println(">> 알 수 없는 연산입니다.");
+//					continue;
+//				}
+
+				arith.setValue(lValue,rValue);	
+				System.out.println(">>"+arith.calculate());
+				
 			}
 		}
 		

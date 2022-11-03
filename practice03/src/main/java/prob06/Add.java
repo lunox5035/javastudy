@@ -1,16 +1,14 @@
 package prob06;
 
-public class Add {
-	private int a;
-	private int b;
-	
-	public void setValue(int lValue, int rValue) {
-		this.a = lValue;
-		this.b = rValue;
-	}
-	
-	public int calculate() {
+public class Add extends Arith{
+
+	@Override
+	public int calcul ate() {
 	
 		return a+b;
 	}
+//		@Override
+//	public void setValue(int a, int b) {
+//		super.setValue(a, b);
+//	}
 }
