@@ -9,12 +9,8 @@ public class MainApp03 {
 			stack.push("World");
 			stack.push("!!!");
 			stack.push("java");
-			stack.push(12);
-
+			
 			while (stack.isEmpty() == false) {
-				//위험: 잘못된 Type Casting
-				//1.작성시 에러발견X
-				//2.런타임떄 ClassCastinfException발생가능
 				String s = stack.pop();
 				System.out.println(s);
 			}
